@@ -119,6 +119,7 @@ var verifyClass = function(constructor) {
 
         var referencesReturn = requireOption('referencesReturn');
         it(might('reference the return keyword', referencesReturn), function() {
+          console.log(referencesReturn)
           assuming(referencesReturn).expect(/return/.test(constructor)).to.be.true;
         });
 
